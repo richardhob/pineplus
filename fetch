@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ ! -d "phoc" ] 
+then
+    git clone https://source.puri.sm/Librem5/phoc.git phoc
+else
+    echo "phoc exists, skipping ..."
+fi
+
+if [ ! -d "phosh" ] 
+then
+    git clone https://source.puri.sm/Librem5/phosh.git phosh
+else
+    echo "phosh exists, skipping ..."
+fi
+
+if [ ! -d "squeekboard" ] 
+then
+    git clone https://source.puri.sm/Librem5/squeekboard.git squeekboard
+else
+    echo "squeekboard exists, skipping ..."
+fi
